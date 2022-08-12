@@ -1,5 +1,5 @@
 <template>
-  <h1 v-if="!pokemon">Espere por favor...</h1>
+  <h1 v-if="!pokemon">Please wait...</h1>
   <div v-else>
     <div class="score-container">
       <strong>Score: {{ score }}</strong>
