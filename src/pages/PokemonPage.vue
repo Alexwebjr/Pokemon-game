@@ -5,7 +5,7 @@
       <strong>Score: {{ score }}</strong>
     </div>
 
-    <h1>¿Quién es este pokémon?</h1>
+    <h1>Who's that pokémon?</h1>
 
     <PokemonPicture
       class="fade-in"
