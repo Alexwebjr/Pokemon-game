@@ -1,6 +1,10 @@
 <template>
   <h1 v-if="!pokemon">Espere por favor...</h1>
   <div v-else>
+    <div class="score-container">
+      <strong>Score: {{ score }}</strong>
+    </div>
+
     <h1>¿Quién es este pokémon?</h1>
 
     <PokemonPicture
@@ -38,6 +42,7 @@ export default {
       showPokemon: false,
       showAnswer: false,
       message: "",
+      score: 0,
     };
   },
   methods: {
@@ -53,8 +58,10 @@ export default {
 
       if (pokemonId === this.pokemon.id) {
         this.message = `CORRECT! Is ${this.pokemon.name}!`;
+        this.score += 1;
       } else {
         this.message = `INCORRECT! Is ${this.pokemon.name}!`;
+        this.score = 0;
       }
     },
     newGame() {
@@ -70,3 +77,15 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.score-container {
+  max-width: 90vm;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: 40px;
+  padding-right: 10%;
+  /* //margin-left: -200px; */
+}
+</style>
