@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PokemonPage component should match snapshop after pokemon load 1`] = `
+<div>
+  <div class="score-container"><strong>Score: 0</strong></div>
+  <h1>Who's that pokémon?</h1>
+  <pokemon-picture-stub pokemonid="1" showpokemon="false" class="fade-in"></pokemon-picture-stub>
+  <pokemon-options-stub pokemons="[object Object],[object Object],[object Object],[object Object]" class="fade-in"></pokemon-options-stub>
+  <!--v-if-->
+</div>
+`;
+
+exports[`PokemonPage component should match snapshot 1`] = `<h1>Please wait...</h1>`;
