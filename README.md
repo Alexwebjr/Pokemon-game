@@ -1,5 +1,10 @@
 # pokemon
 
+## Project Link
+```
+https://vue-pokegames.netlify.app
+```
+
 ## Project setup
 ```
 npm install
